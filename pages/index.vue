@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import hero from '@assets/images/site-vitrine.png'
+import romainsite from '@assets/images/romain.png'
+import wayboxsite from '@assets/images/waybox.png'
 useSeoMeta({
   title: 'Création de sites vitrines pro — MAjorCraft',
   description: 'MajorCraft by ROmain Nigond - Création de site vitrine à bas prix pour les indépendants',
@@ -21,7 +22,7 @@ useSeoMeta({
           </NuxtLink>
         </div>
         <div>
-          <img :src="hero" alt="Exemple site" class="rounded-xl shadow-lg" />
+          <img :src="romainsite" alt="Exemple site" class="rounded-xl shadow-lg" />
         </div>
       </div>
     </section>
@@ -44,26 +45,37 @@ useSeoMeta({
       </div>
     </section>
 
-    <!-- Témoignages -->
-    <section class="py-20 px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-2xl font-bold mb-10">Ils en parlent mieux que nous</h2>
-        <div class="space-y-8">
-          <blockquote class="italic text-gray-700">
-            “J’ai eu mon site en 2 jours, pile ce qu’il me fallait pour lancer mon activité.”
-            <div class="mt-2 font-semibold">
-              — Julie, naturopathe · <a href="https://fr.wikipedia.org/wiki/Naturopathie" target="_blank" class="underline text-sm text-gray-500"></a>
+    <!-- Mes créations - Carrousel centré si peu d'éléments -->
+    <section class="py-20 px-4 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-10">Mes créations</h2>
+        <div class="overflow-x-auto">
+          <div
+            class="flex flex-wrap justify-center gap-6 sm:flex-nowrap sm:justify-start sm:w-max px-2"
+          >
+            <!-- Carte 1 -->
+            <div class="min-w-[280px] bg-white rounded-2xl shadow-md overflow-hidden">
+              <img :src="wayboxsite" alt="Waybox site" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="font-semibold text-lg mb-2">WAYBOX</h3>
+                <p class="text-sm text-gray-500 mb-3">Sauvegarde de données</p>
+                <a href="https://waybox.fr" target="_blank" class="text-blue-600 underline text-sm">Voir le site</a>
+              </div>
             </div>
-          </blockquote>
-          <blockquote class="italic text-gray-700">
-            “Simple, efficace, pas cher. Et les clients trouvent ça super pro.”
-            <div class="mt-2 font-semibold">
-              — Karim, électricien · <a href="https://fr.wikipedia.org/wiki/Électricien" target="_blank" class="underline text-sm text-gray-500"></a>
+            <!-- Carte 2 -->
+            <div class="min-w-[280px] bg-white rounded-2xl shadow-md overflow-hidden">
+              <img :src="romainsite" alt="Site Romain Nigond" class="w-full h-40 object-cover">
+              <div class="p-4">
+                <h3 class="font-semibold text-lg mb-2">Romain Nigond</h3>
+                <p class="text-sm text-gray-500 mb-3">Site personnel</p>
+                <a href="https://romainnigond.fr" target="_blank" class="text-blue-600 underline text-sm">Voir le site</a>
+              </div>
             </div>
-          </blockquote>
+          </div>
         </div>
       </div>
     </section>
+
 
     <!-- Process -->
     <section class="py-20 px-4 bg-[#f7f0e1]">
