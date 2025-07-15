@@ -94,7 +94,7 @@ const envoyerFormulaire = async () => {
           ✉️ majorcraft.contact@gmail.com
         </a>
         <a href="tel:+33781496949" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
-          📞 07 83 17 32 32
+          📞 07 81 49 69 49
         </a>
       </div>
     </div>
