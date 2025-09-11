@@ -44,8 +44,22 @@ const envoyerFormulaire = async () => {
 </script>
 <template>
   <section class="min-h-screen px-4 py-20 bg-white text-black">
-    <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-3xl font-bold mb-6">Prenez contact</h1>
+
+        <!-- Contact direct -->
+    <div class="text-center space-y-4">
+      <h2 class="text-xl font-semibold">Contactez-moi directement :</h2>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="mailto:r.nigondpro@gmail.com" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+          ✉️ r.nigondpro@gmail.com
+        </a>
+        <a href="tel:+33781496949" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+          📞 07 81 49 69 49
+        </a>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto text-center mt-16">
+      <h1 class="text-3xl font-bold mb-6">Ou Prenez contact</h1>
       <p class="text-lg text-gray-700 mb-12">
         Et commençons à discuter de votre future vitrine digitale.
       </p>
@@ -84,19 +98,5 @@ const envoyerFormulaire = async () => {
       </button>
 
     </form>
-
-
-    <!-- Contact direct -->
-    <div class="text-center mt-16 space-y-4">
-      <h2 class="text-xl font-semibold">Ou contactez-moi directement :</h2>
-      <div class="flex justify-center gap-4 flex-wrap">
-        <a href="mailto:majorcraft.contact@gmail.com" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
-          ✉️ majorcraft.contact@gmail.com
-        </a>
-        <a href="tel:+33781496949" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
-          📞 07 81 49 69 49
-        </a>
-      </div>
-    </div>
   </section>
 </template>
