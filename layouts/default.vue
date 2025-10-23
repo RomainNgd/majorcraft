@@ -54,20 +54,20 @@ const goHome = () => router.push('/')
         </button>
 
         <!-- Menu desktop -->
-        <nav class="hidden md:flex space-x-4">
-          <NuxtLink to="/" class="hover:underline" active-class="underline">Accueil</NuxtLink>
-          <NuxtLink to="/offer" class="hover:underline" active-class="underline">Offres</NuxtLink>
-          <NuxtLink to="/about" class="hover:underline" active-class="underline">A propos</NuxtLink>
-          <NuxtLink to="/contact" class="hover:underline" active-class="underline">Contact</NuxtLink>
+        <nav class="hidden md:flex space-x-4 font-semibold">
+          <NuxtLink to="/" class="hover:underline decoration-amber-600" active-class="underline">Accueil</NuxtLink>
+          <NuxtLink to="/offer" class="hover:underline decoration-amber-600" active-class="underline">Offres</NuxtLink>
+          <NuxtLink to="/about" class="hover:underline decoration-amber-600" active-class="underline">A propos</NuxtLink>
+          <NuxtLink to="/contact" class="hover:underline decoration-amber-600" active-class="underline">Contact</NuxtLink>
         </nav>
       </div>
 
       <!-- Menu mobile -->
       <div v-if="isOpen" class="md:hidden mt-4 space-y-2 px-4">
-        <NuxtLink to="/" class="block hover:underline" active-class="underline" @click="isOpen = false">Accueil</NuxtLink>
-        <NuxtLink to="/offer" class="block hover:underline" active-class="underline" @click="isOpen = false">Offres</NuxtLink>
-        <NuxtLink to="/about" class="block hover:underline" active-class="underline" @click="isOpen = false">A propos</NuxtLink>
-        <NuxtLink to="/contact" class="block hover:underline" active-class="underline" @click="isOpen = false">Contact</NuxtLink>
+        <NuxtLink to="/" class="block hover:underline decoration-amber-600" active-class="underline" @click="isOpen = false">Accueil</NuxtLink>
+        <NuxtLink to="/offer" class="block hover:underline decoration-amber-600" active-class="underline" @click="isOpen = false">Offres</NuxtLink>
+        <NuxtLink to="/about" class="block hover:underline decoration-amber-600" active-class="underline" @click="isOpen = false">A propos</NuxtLink>
+        <NuxtLink to="/contact" class="block hover:underline decoration-amber-600" active-class="underline" @click="isOpen = false">Contact</NuxtLink>
       </div>
     </header>
 
